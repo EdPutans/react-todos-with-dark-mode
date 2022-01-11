@@ -1,10 +1,10 @@
-function TodoForm(props) {
+function TodoForm() {
 
   const submit = (e) => {
     e.preventDefault();
     const todoText = e.target.todoText.value;
 
-    props.addTodo(todoText)
+    addTodo(todoText)
     e.target.todoText.value = ''
   };
 

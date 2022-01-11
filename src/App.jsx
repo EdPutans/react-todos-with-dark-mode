@@ -29,7 +29,7 @@ const initialTodos = [{
 
 function App() {
   const [todos, setTodos] = useState(initialTodos);
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const addTodo = (text) => {
     const newTodosArray = [...todos];
@@ -37,14 +37,15 @@ function App() {
     newTodosArray.push({ text, id: getNewId(todos) });
     setTodos(newTodosArray);
   };
-  const backgroundColor = isDarkMode ? '#333' : '#eee'
 
+  const backgroundColor = isDarkMode ? '#333' : '#eee'
 
   return (
     <div className="App" style={{ backgroundColor: backgroundColor }}>
-      <Header text="Todo list!" isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <TodoList todos={todos} isDarkMode={isDarkMode} />
-      <TodoForm addTodo={addTodo} isDarkMode={isDarkMode} />
+      {/* fix these: */}
+      <Header />
+      <TodoList />
+      <TodoForm />
     </div>
   )
 }
