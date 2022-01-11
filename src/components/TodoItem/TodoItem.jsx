@@ -3,7 +3,7 @@ function TodoItem() {
   const color =  ? '#eee' : '#333'
 
   return (
-    <li style={{ color }}>
+    <li style={{ color: color }}>
       todo text goes here
     </li>
   )
