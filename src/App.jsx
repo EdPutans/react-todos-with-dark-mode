@@ -22,7 +22,7 @@ const initialTodos = [{
 },
 {
   id: 4,
-  text: 'Ask Nico if he got his Copilot license yet :)',
+  text: 'Shut up',
 }
 ]
 
